@@ -54,5 +54,9 @@ The `sum()` method in Python requires the first argument to be iterable, like a 
 ### Error 4
 
 **Description:**
+The test is failing because the output is not what is expected.
 
 **Explanation:**
+The subclass `Transformer` was being defined as an extention of both `ParentA` and `ParentB`. `Transformer` should only have one parent class.
+
+Also, based on the output of the test, it looks like `Transformer` was being treated as a child of the `ParentA` superclass. Since this was not producing the desired output, I tried making `ParentB` the superclass. This made `Transformer` pass the test.
