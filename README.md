@@ -30,9 +30,10 @@ in the section below.
 ### Error 1
 
 **Description:**
+The `get_previous()` method does not return zero when there is no previous value.
 
 **Explanation:**
-
+The only situation in which there wouldn't be a previous value is when the method is trying to find the previous value of the first value in the list -- by definition, it doesn't have a previous value. To fix it, I set up a conditional where, if the index of the value is 0, the method should just return 0.
 
 ### Error 2
 
