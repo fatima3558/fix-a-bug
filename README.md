@@ -38,8 +38,10 @@ The only situation in which there wouldn't be a previous value is when the metho
 ### Error 2
 
 **Description:**
+The test throws an error about an index value being out of range.
 
 **Explanation:**
+When using `enumerate()`, the first variable made available is the index. The variables were misnamed, which I was able to verify by printing the variables with a message identifying them. To solve this, I flipped the names so that the variables within this method would be defined semantically.
 
 ### Error 3
 
