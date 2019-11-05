@@ -46,8 +46,10 @@ When using `enumerate()`, the first variable made available is the index. The va
 ### Error 3
 
 **Description:**
+The tests throw an error: "TypeError: 'int' object is not iterable" in line 32.
 
 **Explanation:**
+The `sum()` method in Python requires the first argument to be iterable, like a list or tuple. Since in this line, we are just trying to add one number to another, it makes more sense to use the addition operator.
 
 ### Error 4
 
